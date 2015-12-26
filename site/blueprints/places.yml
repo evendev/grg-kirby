@@ -1,0 +1,6 @@
+title: Places
+pages: place
+files: false
+fields:
+  title: title
+  text: text

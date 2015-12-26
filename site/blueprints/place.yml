@@ -1,0 +1,50 @@
+title: Place
+pages: false
+files:
+  type: image
+fields:
+  headlineBasics: headlineBasics
+  title: title
+  text: 
+    extends: text
+    label: Description
+    help: 1-5 sentences
+  poster: poster
+  tags:
+    type: tags
+    label: Tags
+  headlineContactInfo:
+    type: headline
+    label: Contact Info
+  website:
+    type: url
+    label: Website
+  email:
+    type: email
+    label: Email
+  phone: 
+    type: tel
+    label: Phone (Local)
+    width: 1/2
+  phoneTollFree:
+    type: tel
+    label: Phone (Toll Free)
+    width: 1/2
+  address:
+    type: text
+    label: Address
+  location:
+    type: geolocation
+    label: Geolocation
+  headlineSocials:
+    type: headline
+    label: Social Media
+  facebookUrl: 
+    type: url
+    label: Facebook URL
+  twitterUrl: 
+    type: url
+    label: Twitter URL
+  instagramUrl: 
+    type: url
+    label: Instagram URL

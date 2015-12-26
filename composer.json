@@ -15,8 +15,12 @@
         "mnsami/composer-custom-directory-installer": "1.0.*",
         "getkirby/kirby": "2.2.3",
         "getkirby/toolkit": "2.2.3",
-        "getkirby/panel": "2.2.3"
+        "getkirby/panel": "2.2.3",
+        "kirbycasts/kirby-view-blade": "dev-master",
+        "lekkerduidelijk/kirby-geolocation-field": "0.0.1"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "repositories": [
         {
             "type": "package",
@@ -53,13 +57,39 @@
                     "reference": "2.2.3"
                 }
             }
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/jevets/kirby-view.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/jevets/kirby-view-blade.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "lekkerduidelijk/kirby-geolocation-field",
+                "version": "0.0.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/lekkerduidelijk/kirby-geolocation-field.git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "extra": {
         "installer-paths": {
             "./public/kirby": ["getkirby/kirby"],
             "./public/kirby/toolkit": ["getkirby/toolkit"],
-            "./public/panel": ["getkirby/panel"]
+            "./public/panel": ["getkirby/panel"],
+            "./site/fields/geolocation": ["lekkerduidelijk/kirby-geolocation-field"]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "GreenRiverGorge\\": "src/GreenRiverGorge"
         }
     }
 }

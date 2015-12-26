@@ -1,6 +1,12 @@
 {
-    "name": "mysite",
-    "scripts": {
-        "serve": "php -S localhost:9000 -t public/"
-    }
+  "name": "mysite",
+  "scripts": {
+    "serve": "php -S localhost:9000 -t public/"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.1.4",
+    "laravel-elixir": "^4.1.1"
+  }
 }
