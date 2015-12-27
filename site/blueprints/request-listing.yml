@@ -6,6 +6,7 @@ files: false
 fields:
   headlineBasics: headlineBasics
   title: title
+  menuLabel: menuLabel
   formIntro:
     type: textarea
     label: Form Intro

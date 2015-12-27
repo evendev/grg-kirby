@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>@yield('document.title', site()->title())</title>
+        <title>{{ GreenRiverGorge\App::title() }}</title>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Skranji:700">
         <link rel="stylesheet" href="/assets/css/app.css">
@@ -28,10 +28,18 @@
             <nav class="nav">
                 <div class="container">
                     <ul class="list-inline nav-menu">
-                        <li class="{{ r(page('do')->isOpen(), 'active') }}"><a href="/do">Do</a></li>
-                        <li class="{{ r(page('eat')->isOpen(), 'active') }}"><a href="/eat">Eat</a></li>
-                        <li class="{{ r(page('stay')->isOpen(), 'active') }}"><a href="/stay">Stay</a></li>
-                        <li class="{{ r(page('directions')->isOpen(), 'active') }}"><a href="/directions">Get Here</a></li>
+                        <li class="{{ r(page('do')->isOpen(), 'active') }}">
+                            <a href="/do">{{ page('do')->menuTitle() }}</a>
+                        </li>
+                        <li class="{{ r(page('eat')->isOpen(), 'active') }}">
+                            <a href="/eat">{{ page('eat')->menuTitle() }}</a>
+                        </li>
+                        <li class="{{ r(page('stay')->isOpen(), 'active') }}">
+                            <a href="/stay">{{ page('stay')->menuTitle() }}</a>
+                        </li>
+                        <li class="{{ r(page('directions')->isOpen(), 'active') }}">
+                            <a href="/directions">{{ page('directions')->menuTitle() }}</a>
+                        </li>
                     </ul>
                 </div>
             </nav>

@@ -3,4 +3,5 @@ pages: place
 files: false
 fields:
   title: title
+  menuLabel: menuLabel
   text: text

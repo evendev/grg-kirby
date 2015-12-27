@@ -7851,7 +7851,7 @@ h1, h2, h3 {
 .footer {
   font-size: 12px;
   text-align: center;
-  padding: 2rem 0; }
+  padding: 4rem 0 3rem; }
   .footer, .footer a {
     color: #eeeeee; }
 
@@ -7862,19 +7862,22 @@ h1, h2, h3 {
   .nav .nav-menu {
     margin: 0;
     background: rgba(0, 0, 0, 0.5); }
-  .nav li > a {
-    display: inline-block;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 2rem; }
-  .nav li.active a,
-  .nav li a:hover,
-  .nav li a:active,
-  .nav li a:focus {
-    background: black;
-    text-decoration: none;
-    transition: 0.6s; }
+    .nav .nav-menu li {
+      margin: 0;
+      padding: 0; }
+      .nav .nav-menu li > a {
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 2rem; }
+      .nav .nav-menu li.active a,
+      .nav .nav-menu li a:hover,
+      .nav .nav-menu li a:active,
+      .nav .nav-menu li a:focus {
+        background: black;
+        text-decoration: none;
+        transition: 0.6s; }
 
 .icon-xs {
   font-size: 0.8rem; }

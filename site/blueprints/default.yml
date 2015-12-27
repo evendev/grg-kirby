@@ -4,4 +4,5 @@ files: true
 fields:
   headlineBasics: headlineBasics
   title: title
+  menuLabel: menuLabel
   text: text
