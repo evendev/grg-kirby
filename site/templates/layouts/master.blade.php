@@ -29,16 +29,16 @@
                 <div class="container">
                     <ul class="list-inline nav-menu">
                         <li class="{{ r(page('do')->isOpen(), 'active') }}">
-                            <a href="/do">{{ page('do')->menuTitle() }}</a>
+                            <a href="/do" title="{{ page('do')->title() }}">{{ page('do')->menuTitle() }}</a>
                         </li>
                         <li class="{{ r(page('eat')->isOpen(), 'active') }}">
-                            <a href="/eat">{{ page('eat')->menuTitle() }}</a>
+                            <a href="/eat" title="{{ page('eat')->title() }}">{{ page('eat')->menuTitle() }}</a>
                         </li>
                         <li class="{{ r(page('stay')->isOpen(), 'active') }}">
-                            <a href="/stay">{{ page('stay')->menuTitle() }}</a>
+                            <a href="/stay" title="{{ page('stay')->title() }}">{{ page('stay')->menuTitle() }}</a>
                         </li>
                         <li class="{{ r(page('directions')->isOpen(), 'active') }}">
-                            <a href="/directions">{{ page('directions')->menuTitle() }}</a>
+                            <a href="/directions" title="{{ page('directions')->title() }}">{{ page('directions')->menuTitle() }}</a>
                         </li>
                     </ul>
                 </div>
