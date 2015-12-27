@@ -62,6 +62,7 @@
 
         </div>
 
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="/assets/js/app.js"></script>
 
         @yield('foot')

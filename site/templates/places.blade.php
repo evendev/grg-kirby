@@ -7,7 +7,7 @@
 
     <div class="places">
     @foreach ($page->children()->visible() as $item)
-        <div class="panel panel-textured">
+        <div class="panel panel-textured" id="{{ $item->uid() }}">
             <div class="panel-body">
                 <h2 class="panel-title">{{ $item->title() }}</h2>
                 <div class="row">

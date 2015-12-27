@@ -30,4 +30,42 @@ class PlacePage extends BasePage
             return 'https://maps.google.com/?q=' . urlencode($this->address()->toString());
         }
     }
+
+    /**
+     * Get the human-readable "type" of the place
+     *
+     * @return string
+     */
+    public function type()
+    {
+        $types = [
+            'do'   => 'Attraction',
+            'eat'  => 'Restaurant',
+            'stay' => 'Lodging',
+        ];
+
+        return $types[$this->parent()->uid()];
+    }
+
+    /**
+     * Serialize this Place for public data consmuption
+     *
+     * @return array
+     */
+    public function serialize()
+    {
+        $loc = $this->location()->split(',');
+
+        return [
+            'uid' => $this->uid(),
+            'collectionUrl' => $this->parent()->url(),
+            'collection' => $this->type(),
+            'title' => $this->title()->toString(),
+            'phone' => $this->phoneNumber()->toString(),
+            'location' => [
+                'lng' => $loc[1],
+                'lat' => $loc[0],
+            ],
+        ];
+    }
 }
