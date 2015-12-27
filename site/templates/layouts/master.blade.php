@@ -36,12 +36,28 @@
                 </div>
             </nav>
 
+            @include('_messages')
+
             <main class="container">
                 @yield('main')
             </main>
 
             <footer class="footer">
-                
+                <div class="container">
+                    <p class="legal">
+                        Contents &copy; {{ date('Y') }} GreenRiverGorge.com.
+                    </p>
+                    <ul class="list-inline footer-menu">
+                        @foreach (site()->pages()->visible() as $item)
+                        <li>
+                            <a href="{{ $item->url() }}">{{ $item->title() }}</a>
+                        </li>
+                        @endforeach
+                        <li>
+                            <a href="/list">List Your Business</a>
+                        </li>
+                    </ul>
+                </div>
             </footer>
 
         </div>

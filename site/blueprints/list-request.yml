@@ -1,0 +1,58 @@
+title: List Request
+pages: false
+files: false
+fields:
+  headlineBasics: headlineBasics
+  timestamp:
+    type: hidden
+  title: title
+  date: 
+    type: date
+    label: Submission Date
+  headlineRequester: 
+    type: headline
+    label: Requester info
+  name:
+    type: text
+    label: Name
+  email:
+    type: email
+    label: Email
+  phone:
+    type: tel
+    label: Phone
+  headlineBiz:
+    type: headline
+    label: Business info
+  business_type:
+    type: radio
+    label: Type
+    options: 
+      attraction: Attraction
+      lodging: Lodging
+      restaurant: Restaurant
+  business_name:
+    type: text
+    label: Business Name
+  business_phone:
+    type: tel
+    label: Business Phone
+  business_website:
+    type: url
+    label: Business Website
+  business_address:
+    type: text
+    label: Business Address
+  business_description:
+    type: textarea
+    buttons: false
+    label: Business Description
+  facebook:
+    type: url
+    label: Facebook URL
+  twitter:
+    type: url
+    label: Twitter URL
+  instagram:
+    type: url
+    label: Instagram URL

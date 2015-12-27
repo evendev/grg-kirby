@@ -7,49 +7,44 @@
 
     <div class="places">
     @foreach ($page->children()->visible() as $item)
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">{{ $item->title() }}</div>
-            </div>
+        <div class="panel panel-textured">
             <div class="panel-body">
-                {!! $item->text()->kirbytext() !!}
-                @if ($item->facebookUrl()->isNotEmpty())
-                    <a href="{{ $item->facebookUrl() }}" target="_blank">
-                        <i class="fa fa-facebook-square icon-lg"></i>
-                    </a>
-                @endif
-                @if ($item->twitterUrl()->isNotEmpty())
-                    <a href="{{ $item->twitterUrl() }}" target="_blank">
-                        <i class="fa fa-twitter-square icon-lg"></i>
-                    </a>
-                @endif
-                @if ($item->instagramUrl()->isNotEmpty())
-                    <a href="{{ $item->instagramUrl() }}" target="_blank">
-                        <i class="fa fa-instagram icon-lg"></i>
-                    </a>
-                @endif
-            </div>
-            <div class="list-group">
-            @if ($item->address()->isNotEmpty())
-                <a href="{{ $item->gmapUrl() }}" class="list-group-item">
-                    {{ $item->address() }}
-                </a>
-            @endif
-            @if ($item->phone()->isNotEmpty())
-                <a class="list-group-item" href="tel:{{ $item->phone() }}">
-                    {{ $item->phone() }}
-                </a>
-            @endif
-            @if ($item->phoneTollFree()->isNotEmpty())
-                <a class="list-group-item" href="tel:{{ $item->phoneTollFree() }}">
-                    {{ $item->phoneTollFree() }}
-                </a>
-            @endif
-            @if ($item->website()->isNotEmpty())
-                <a class="list-group-item" href="{{ $item->website() }}" target="_blank">
-                    Visit Website
-                </a>
-            @endif
+                <h2 class="panel-title">{{ $item->title() }}</h2>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <ul class="list-inline place-contact-info">
+                            <li>
+                                {{ $item->phoneNumber() }}
+                            </li>
+                            <li>
+                                @if ($item->website()->isNotEmpty())
+                                    <a href="{{ $item->website() }}" target="_blank">
+                                        Visit Website
+                                    </a>
+                                @endif
+                            </li>
+                        </ul>
+                        <div class="lead">
+                            {!! $item->text()->kirbytext() !!}
+                        </div>
+                        @if ($item->address()->isNotEmpty())
+                        <p class="place-address">
+                            <i class="fa fa-map-marker"></i>
+                            {{ $item->address() }}
+                            <a href="{{ $item->gmapUrl() }}" target="_blank">
+                                Map 
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                        </p>
+                        @endif
+                        <p>
+                            @include('places/socials')
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="{{ thumb( $item->posterImage(), ['width' => 680, 'height' => 440, 'crop' => true] )->url() }}" alt="{{ $item->title() }}" class="img-responsive">
+                    </div>
+                </div>
             </div>
         </div>
     @endforeach

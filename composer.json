@@ -17,6 +17,7 @@
         "getkirby/toolkit": "2.2.3",
         "getkirby/panel": "2.2.3",
         "kirbycasts/kirby-view-blade": "dev-master",
+        "jevets/kirby-form": "dev-master",
         "lekkerduidelijk/kirby-geolocation-field": "0.0.1"
     },
     "minimum-stability": "dev",
@@ -65,6 +66,14 @@
         {
             "type": "git",
             "url": "https://github.com/jevets/kirby-view-blade.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/jevets/kirby-flash.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/jevets/kirby-form.git"
         },
         {
             "type": "package",

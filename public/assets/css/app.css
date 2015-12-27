@@ -7835,6 +7835,9 @@ body {
   min-height: 800px;
   background: url(../img/header-bg.jpg) center top no-repeat; }
 
+h1, h2, h3 {
+  text-transform: uppercase; }
+
 .header {
   padding: 2rem 0; }
   .header .logo {
@@ -7844,6 +7847,13 @@ body {
     @media (min-width: 768px) {
       .header .logo {
         max-width: 300px; } }
+
+.footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 2rem 0; }
+  .footer, .footer a {
+    color: #eeeeee; }
 
 .nav {
   text-align: center;
@@ -7882,6 +7892,21 @@ body {
   font-size: 7rem; }
 
 .page-header {
-  color: white; }
+  color: white;
+  text-align: center; }
+
+.panel.panel-textured {
+  background: #eed0a9; }
+  .panel.panel-textured hr {
+    border-color: #a96e22; }
+  .panel.panel-textured .panel-title {
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    margin-bottom: 1.4rem; }
+  .panel.panel-textured .place-contact-info {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Skranji", sans-serif; }
 
 /*# sourceMappingURL=app.css.map */

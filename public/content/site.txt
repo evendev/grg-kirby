@@ -1,1 +1,5 @@
 Title: Green River Gorge Visitor's Guide
+
+----
+
+DefaultPlaceImage: image-coming-soon.png

@@ -1,0 +1,11 @@
+title: Request Listing
+pages: 
+  template: list-request
+  num: date
+files: false
+fields:
+  headlineBasics: headlineBasics
+  title: title
+  formIntro:
+    type: textarea
+    label: Form Intro

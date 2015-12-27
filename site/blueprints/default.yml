@@ -2,5 +2,6 @@ title: Page
 pages: default
 files: true
 fields:
+  headlineBasics: headlineBasics
   title: title
   text: text

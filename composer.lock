@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fcbf7c2a869aea4c8be49cb76fe0c5c2",
-    "content-hash": "dbff0a07f4a1a3d3308a05f7a405707d",
+    "hash": "5a9aea6e63648efc641c8a0ecab47fc0",
+    "content-hash": "633868b423a4959ec5542b6bd929c7f1",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -388,6 +388,70 @@
             "time": "2015-12-08 16:38:14"
         },
         {
+            "name": "jevets/kirby-flash",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jevets/kirby-flash.git",
+                "reference": "408fce54ccb2ce92420c6d96fcdddd78addc61b0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jevets\\Kirby\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Steve Jamesson",
+                    "email": "steve@evendev.com"
+                }
+            ],
+            "description": "Stores data in the session for the next request. Data is removed after the next page load.",
+            "keywords": [
+                "flash",
+                "kirby",
+                "session"
+            ],
+            "time": "2015-12-14 18:09:49"
+        },
+        {
+            "name": "jevets/kirby-form",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jevets/kirby-form.git",
+                "reference": "29293a58a7a4db022ec9ff8e69e1765fb1938b48"
+            },
+            "require": {
+                "jevets/kirby-flash": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jevets\\Kirby\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Steve Jamesson",
+                    "email": "steve@evendev.com"
+                }
+            ],
+            "description": "A form helper for Kirby-based websites, using the GET/POST/GET pattern.",
+            "keywords": [
+                "form",
+                "kirby"
+            ],
+            "time": "2015-12-23 13:53:49"
+        },
+        {
             "name": "kirbycasts/kirby-view",
             "version": "dev-master",
             "source": {
@@ -539,16 +603,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "3577eb98dba90721d1a0a3edfc6956ab8b1aecee"
+                "reference": "8617895eb798b6bdb338321ce19453dc113e5675"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/3577eb98dba90721d1a0a3edfc6956ab8b1aecee",
-                "reference": "3577eb98dba90721d1a0a3edfc6956ab8b1aecee",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/8617895eb798b6bdb338321ce19453dc113e5675",
+                "reference": "8617895eb798b6bdb338321ce19453dc113e5675",
                 "shasum": ""
             },
             "require": {
@@ -584,14 +648,15 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 23:35:59"
+            "time": "2015-12-05 11:13:14"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "kirbycasts/kirby-view-blade": 20
+        "kirbycasts/kirby-view-blade": 20,
+        "jevets/kirby-form": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
