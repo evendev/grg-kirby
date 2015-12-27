@@ -7,7 +7,7 @@
 
         <title>{{ GreenRiverGorge\App::title() }}</title>
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Skranji:700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Skranji:700">
         <link rel="stylesheet" href="/assets/css/app.css">
 
         @yield('head')

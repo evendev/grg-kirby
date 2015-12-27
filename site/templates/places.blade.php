@@ -9,9 +9,9 @@
     @foreach ($page->children()->visible() as $item)
         <div class="panel panel-textured" id="{{ $item->uid() }}">
             <div class="panel-body">
-                <h2 class="panel-title">{{ $item->title() }}</h2>
                 <div class="row">
                     <div class="col-sm-8">
+                        <h2 class="panel-title">{{ $item->title() }}</h2>
                         <ul class="list-inline place-contact-info">
                             <li>
                                 {{ $item->phoneNumber() }}
@@ -42,7 +42,7 @@
                         </p>
                     </div>
                     <div class="col-sm-4">
-                        <img src="{{ thumb( $item->posterImage(), ['width' => 680, 'height' => 440, 'crop' => true] )->url() }}" alt="{{ $item->title() }}" class="img-responsive">
+                        <img src="{{ thumb( $item->posterImage(), ['width' => 680, 'height' => 510, 'crop' => true] )->url() }}" alt="{{ $item->title() }}" class="img-responsive">
                     </div>
                 </div>
             </div>
