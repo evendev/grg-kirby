@@ -11,6 +11,9 @@
                     <h2>{{ $page->lead() }}</h2>
                     {!! $page->text()->kirbytext() !!}  
                     <div class="gmap" id="gmap--directions"></div>
+                    <p class="lead">
+                        <a href="https://www.google.com/maps/place/Saluda+NC+28773" target="_blank">Get directions on Google Maps &raquo;</a>
+                    </p>
                 </div>
             </div>
         </div>
