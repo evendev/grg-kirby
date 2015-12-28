@@ -1,5 +1,6 @@
 <?php 
 
+use \c as Config;
 use \r as Request;
 use Jevets\Kirby\Form;
 
@@ -55,6 +56,20 @@ return function ($site, $pages, $page) {
             // save submission
             $listRequest = new GreenRiverGorge\ListRequest($form->data());
             $listRequest->store( $page );
+
+            // notify
+            $email = new \Email([
+                'to'      => Config::get('email.to'),
+                'from'    => Config::get('email.from'),
+                'subject' => '[grg] New Listing Request',
+                'body'    => snippet('emails/list-request', $form->data(), true),
+            ]);
+
+            try
+            {
+                $email->send();
+            }
+            catch (\Exception $e) {}
         }
         else
         {

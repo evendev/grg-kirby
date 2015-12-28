@@ -33,8 +33,9 @@ class ListRequest
      */
     public function store($page)
     {
-        $title = $this->data['business_name'];
-        $uid = date('Ymd', $this->data['timestamp']) . '-' . String::slug($title);
+        $timestamp = date('YmdHis', $this->data['timestamp']);
+        $title =  $this->data['business_name'] . '-' . $timestamp;
+        $uid = String::slug($title);
 
         $data = $this->data;
 
