@@ -29,7 +29,6 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-
 // Email
 c::set('email.from', env('EMAIL_FROM'));
 c::set('email.to', env('EMAIL_TO'));
