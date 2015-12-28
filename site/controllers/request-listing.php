@@ -55,8 +55,6 @@ return function ($site, $pages, $page) {
             // save submission
             $listRequest = new GreenRiverGorge\ListRequest($form->data());
             $listRequest->store( $page );
-
-            // notify someone
         }
         else
         {

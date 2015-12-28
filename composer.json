@@ -18,7 +18,8 @@
         "getkirby/panel": "2.2.3",
         "kirbycasts/kirby-view-blade": "dev-master",
         "jevets/kirby-form": "dev-master",
-        "lekkerduidelijk/kirby-geolocation-field": "0.0.1"
+        "lekkerduidelijk/kirby-geolocation-field": "0.0.1",
+        "jevets/kirby-phpdotenv": "dev-master"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
