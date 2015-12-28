@@ -7854,6 +7854,10 @@ h1, h2, h3 {
   padding: 4rem 0 3rem; }
   .footer, .footer a {
     color: #eeeeee; }
+  .footer a {
+    text-decoration: underline; }
+  .footer a:hover, .footer a:focus, .footer a:active {
+    text-decoration: none; }
 
 .nav {
   text-align: center;

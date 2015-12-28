@@ -50,10 +50,36 @@
                 @yield('main')
             </main>
 
+            <section class="sponsors">
+                <div class="container text-center">
+                    <h2 class="page-header">Brought to you by</h2>
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <a href="http://thegorgezipline.com/" target="_blank">
+                                <img src="/assets/img/the-gorge-zipline.png" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="http://greenriveradventures.com/" target="_blank">
+                                <img src="/assets/img/green-river-adventures.png" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <footer class="footer">
                 <div class="container">
                     <p class="legal">
-                        Contents &copy; {{ date('Y') }} GreenRiverGorge.com.
+                        Contents &copy; {{ date('Y') }} 
+                        <a href="{{ site()->url() }}">GreenRiverGorge.com</a>
+                        and its partners.
+                    </p>
+                    <p class="credits">
+                        Made by 
+                        <a href="http://www.groovy.xyz/" target="_blank">Jim</a>
+                        and
+                        <a href="http://www.evendev.com/" target="_blank">Steve</a>.
                     </p>
                     <ul class="list-inline footer-menu">
                         @foreach (site()->pages()->visible() as $item)
