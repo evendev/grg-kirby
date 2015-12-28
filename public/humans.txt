@@ -1,7 +1,7 @@
 /* TEAM */
     UI designer, developer, integrator: Steve Jamesson
     Home Page: http://www.stevejamesson.com/
-    GitHub: github.com/evendev
+    GitHub: https://github.com/evendev
     From: Asheville, NC, USA
 
     Graphics designer, branding: Jim Jamesson
