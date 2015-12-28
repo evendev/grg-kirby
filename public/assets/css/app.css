@@ -7897,8 +7897,10 @@ h1, h2, h3 {
 .icon-xl {
   font-size: 7rem; }
 
-.fa-social {
+.social-icon {
   margin-right: 10px; }
+  .social-icon:hover, .social-icon:active, .social-icon:focus {
+    text-decoration: none; }
 
 .page-header {
   color: white;

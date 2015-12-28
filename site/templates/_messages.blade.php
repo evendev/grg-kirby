@@ -12,7 +12,7 @@
 @if (flash('messages.error'))
 <div class="container">
     <div class="alert alert-danger">
-        <strong>Danger!</strong>
+        <strong>Oh no!</strong>
         @foreach (flash('messages.error') as $message)
             <div>{{ $message }}</div>
         @endforeach

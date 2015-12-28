@@ -14,25 +14,25 @@
                     @include('_form-errors')
                     <form method="POST" class="form-horizontal">
                         <div class="form-group {{ r($form->error('name'), 'has-error') }}">
-                            <label for="name" class="control-label col-sm-4">Your name</label>
+                            <label for="name" class="control-label col-sm-4">Your name *</label>
                             <div class="col-sm-6">
                                 <input type="text" name="name" id="name" placeholder="Your name" class="form-control" value="{{ $form->old('name') }}">
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('email'), 'has-error') }}">
-                            <label for="email" class="control-label col-sm-4">Your email</label>
+                            <label for="email" class="control-label col-sm-4">Your email *</label>
                             <div class="col-sm-6">
                                 <input type="email" name="email" id="email" placeholder="Your email" class="form-control" value="{{ $form->old('email') }}">
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('phone'), 'has-error') }}">
-                            <label for="phone" class="control-label col-sm-4">Your phone</label>
+                            <label for="phone" class="control-label col-sm-4">Your phone *</label>
                             <div class="col-sm-6">
                                 <input type="tel" name="phone" id="phone" placeholder="Your phone" class="form-control" value="{{ $form->old('phone') }}">
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('business_type'), 'has-error') }}">
-                            <label for="business_type" class="control-label col-sm-4">Business type</label>
+                            <label for="business_type" class="control-label col-sm-4">Business type *</label>
                             <div class="col-sm-6">
                                 <div class="radio">
                                     <label for="attraction">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('business_name'), 'has-error') }}">
-                            <label for="business_name" class="control-label col-sm-4">Business name</label>
+                            <label for="business_name" class="control-label col-sm-4">Business name *</label>
                             <div class="col-sm-6">
                                 <input type="text" name="business_name" id="business_name" placeholder="Business name" class="form-control" value="{{ $form->old('business_name') }}">
                             </div>
@@ -67,22 +67,28 @@
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('business_phone'), 'has-error') }}">
-                            <label for="business_phone" class="control-label col-sm-4">Business phone</label>
+                            <label for="business_phone" class="control-label col-sm-4">Business phone *</label>
                             <div class="col-sm-6">
                                 <input type="tel" name="business_phone" id="business_phone" placeholder="Business phone" class="form-control" value="{{ $form->old('business_phone') }}">
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('business_address'), 'has-error') }}">
-                            <label for="business_address" class="control-label col-sm-4">Business address</label>
+                            <label for="business_address" class="control-label col-sm-4">Business address *</label>
                             <div class="col-sm-6">
                                 <input type="text" name="business_address" id="business_address" placeholder="123 Street, City, ST ZIP" class="form-control" value="{{ $form->old('business_address') }}">
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('business_description'), 'has-error') }}">
-                            <label for="business_description" class="control-label col-sm-4">Business description</label>
+                            <label for="business_description" class="control-label col-sm-4">Business description *</label>
                             <div class="col-sm-6">
                                 <textarea name="business_description" id="business_description" placeholder="Brief description of the business" class="form-control" rows="4">{{ $form->old('business_description') }}</textarea>
                                 <span class="help-block">Brief description in 2-4 sentences</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tripadvisor" class="control-label col-sm-4">TripAdvisor URL</label>
+                            <div class="col-sm-6">
+                                <input type="url" name="tripadvisor" id="tripadvisor" placeholder="http://" class="form-control" value="{{ $form->old('tripadvisor') }}">
                             </div>
                         </div>
                         <div class="form-group">

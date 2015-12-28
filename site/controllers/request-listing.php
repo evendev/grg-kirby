@@ -39,6 +39,7 @@ return function ($site, $pages, $page) {
             'message' => 'Business description is required',
         ],
         'business_website' => [],
+        'tripadvisor' => [],
         'facebook' => [],
         'twitter' => [],
         'instagram' => [],

@@ -47,6 +47,9 @@ fields:
     type: textarea
     buttons: false
     label: Business Description
+  tripadvisor:
+    type: url
+    label: TripAdvisor URL
   facebook:
     type: url
     label: Facebook URL
