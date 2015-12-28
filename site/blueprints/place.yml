@@ -42,9 +42,16 @@ fields:
   facebookUrl: 
     type: url
     label: Facebook URL
+    icon: facebook
+  tripadvisorUrl: 
+    type: url
+    label: TripAdvisor URL
+    icon: tripadvisor
   twitterUrl: 
     type: url
     label: Twitter URL
+    icon: twitter
   instagramUrl: 
     type: url
     label: Instagram URL
+    icon: instagram
