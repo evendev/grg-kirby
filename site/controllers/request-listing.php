@@ -57,19 +57,25 @@ return function ($site, $pages, $page) {
             $listRequest = new GreenRiverGorge\ListRequest($form->data());
             $listRequest->store( $page );
 
+            $to = explode(',', Config::get('email.to'));
+
             // notify
             $email = new \Email([
-                'to'      => Config::get('email.to'),
                 'from'    => Config::get('email.from'),
                 'subject' => '[grg] New Listing Request',
                 'body'    => snippet('emails/list-request', $form->data(), true),
             ]);
 
-            try
+            foreach ($to as $recip)
             {
-                $email->send();
+                try
+                {
+                    $email->send([
+                        'to' => $recip,
+                    ]);
+                }
+                catch (\Exception $e) {}
             }
-            catch (\Exception $e) {}
         }
         else
         {

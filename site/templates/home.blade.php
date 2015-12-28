@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('main')
+    <h1 class="page-header">{{ c::get('email.to') }}</h1>
     <div id="gmap--home" class="gmap gmap--full"></div>
 @stop
 
