@@ -1,0 +1,12 @@
+title: Directions
+pages: false
+files: false
+fields:
+  headlineBasics: headlineBasics
+  title: title
+  menuLabel: menuLabel
+  headlineContent: 
+    type: headline
+    label: Content
+  lead: lead
+  text: text
