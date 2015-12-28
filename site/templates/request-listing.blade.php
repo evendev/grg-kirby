@@ -1,5 +1,15 @@
 @extends('layouts.master')
 
+@section('foot')
+<script>
+$(document).ready(function() {
+    $('form#request-listing').on('submit', function() {
+        $(this).find('button[type="submit"]').attr('disabled', 'disabled');
+    });
+});
+</script>
+@stop
+
 @section('main')
     <div class="page-header">
         <h1>{{ $page->title() }}</h1>
@@ -12,7 +22,7 @@
                         {!! $page->formIntro()->kirbytext() !!}
                     </div>
                     @include('_form-errors')
-                    <form method="POST" class="form-horizontal">
+                    <form method="POST" class="form-horizontal" id="request-listing">
                         <div class="form-group {{ r($form->error('name'), 'has-error') }}">
                             <label for="name" class="control-label col-sm-4">Your name *</label>
                             <div class="col-sm-6">
