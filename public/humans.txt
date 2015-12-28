@@ -1,0 +1,18 @@
+/* TEAM */
+    UI designer, developer, integrator: Steve Jamesson
+    Home Page: http://www.stevejamesson.com/
+    GitHub: github.com/evendev
+    From: Asheville, NC, USA
+
+    Graphics designer, branding: Jim Jamesson
+    Home Page: http://www.groovy.xyz/
+    From: Hendersonville, NC, USA
+
+    Sponsor: Sara & Tim Bell
+    Company: The Gorge
+    Home Page: http://thegorgezipline.com/
+
+    Sponsor: Sara & Tim Bell
+    Company: Green River Adventures
+    Home Page: http://greenriveradventures.com/
+    
