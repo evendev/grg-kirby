@@ -16,6 +16,10 @@ RewriteEngine on
 #
 # RewriteBase /mysite
 
+# Redirect to www
+RewriteCond %{HTTP_HOST} ^greenrivergorge.com$ [NC]
+RewriteRule ^(.*)$ http://www.greenrivergorge.com/$1 [R=301,L]
+
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
 
