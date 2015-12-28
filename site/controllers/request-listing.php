@@ -61,7 +61,7 @@ return function ($site, $pages, $page) {
 
             // notify
             $email = new \Email([
-                'from'    => Config::get('email.from'),
+                'from'    => 'GRG <' . Config::get('email.from') . '>',
                 'subject' => '[grg] New Listing Request',
                 'body'    => snippet('emails/list-request', $form->data(), true),
             ]);
