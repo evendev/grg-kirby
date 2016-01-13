@@ -1,5 +1,8 @@
 title: Places
-pages: place
+pages: 
+  template: 
+    - place
+    - activity
 files: false
 fields:
   title: title

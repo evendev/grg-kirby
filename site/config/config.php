@@ -29,6 +29,9 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
+// App Mode
+c::set('app.mod', env('APP_MODE', 'production'));
+
 // Email
 c::set('email.from', env('EMAIL_FROM'));
 c::set('email.to', env('EMAIL_TO'));

@@ -71,12 +71,12 @@
             <footer class="footer">
                 <div class="container">
                     <p class="legal">
-                        Contents &copy; {{ date('Y') }} 
+                        Contents &copy; {{ date('Y') }}
                         <a href="{{ site()->url() }}">GreenRiverGorge.com</a>
                         and its partners.
                     </p>
                     <p class="credits">
-                        Made by 
+                        Made by
                         <a href="http://www.groovy.xyz/" target="_blank">Jim</a>
                         and
                         <a href="http://www.evendev.com/" target="_blank">Steve</a>.
@@ -100,5 +100,6 @@
         <script src="/assets/js/app.js"></script>
 
         @yield('foot')
+        @include('layouts.analytics')
     </body>
 </html>
