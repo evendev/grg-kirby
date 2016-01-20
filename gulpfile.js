@@ -14,5 +14,6 @@ elixir(function(mix) {
 
     // Copy images
     mix.copy('./site/assets/img', './public/assets/img');
+    mix.copy('./site/assets/icon', './public/assets/icon');
 
 });

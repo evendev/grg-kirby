@@ -1,0 +1,7 @@
+title: Activity
+pages: false
+files: true
+fields:
+  headlineBasics: headlineBasics
+  title: title
+  text: text
