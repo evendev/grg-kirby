@@ -51,7 +51,7 @@ return function ($site, $pages, $page) {
     {
         if ($form->validates())
         {
-            flash('messages.success', ['We got your message.', "We'll be back in touch within a few days after we've reviewed your business."]);
+            flash('messages.success', ['We got your message.', "We'll be back in touch within a few days after we've reviewed your business.", "If approved we'll request a featured photo from you."]);
 
             // save submission
             $listRequest = new GreenRiverGorge\ListRequest($form->data());

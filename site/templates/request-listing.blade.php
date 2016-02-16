@@ -89,10 +89,10 @@ $(document).ready(function() {
                             </div>
                         </div>
                         <div class="form-group {{ r($form->error('business_description'), 'has-error') }}">
-                            <label for="business_description" class="control-label col-sm-4">Business description *</label>
+                            <label for="business_description" class="control-label col-sm-4">Marketing brief *</label>
                             <div class="col-sm-6">
-                                <textarea name="business_description" id="business_description" placeholder="Brief description of the business" class="form-control" rows="4">{{ $form->old('business_description') }}</textarea>
-                                <span class="help-block">Brief description in 2-4 sentences</span>
+                                <textarea name="business_description" id="business_description" placeholder="Brief marketing description of the business" class="form-control" rows="4">{{ $form->old('business_description') }}</textarea>
+                                <span class="help-block">2 - 4 sentences, intended for public audience.</span>
                             </div>
                         </div>
                         <div class="form-group">
