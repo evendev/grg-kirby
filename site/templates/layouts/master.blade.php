@@ -77,6 +77,25 @@
 
             <footer class="footer">
                 <div class="container">
+                    @if (c::get('newsletter.signup_url'))
+                    <p>
+                        <a target="_blank" href="{{ c::get('newsletter_signup_url') }}">
+                            Join our Newsletter!
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </p>
+                    @endif
+                    <ul class="list-inline footer-menu">
+                        @foreach (site()->pages()->visible() as $item)
+                        <li>
+                            <a href="{{ $item->url() }}">{{ $item->title() }}</a>
+                        </li>
+                        @endforeach
+                        <li>
+                            <a href="/list">List Your Business</a>
+                        </li>
+                    </ul>
+
                     <p class="legal">
                         Contents &copy; {{ date('Y') }}
                         <a href="{{ site()->url() }}">GreenRiverGorge.com</a>
@@ -88,16 +107,6 @@
                         and
                         <a href="http://www.evendev.com/" target="_blank">Steve</a>.
                     </p>
-                    <ul class="list-inline footer-menu">
-                        @foreach (site()->pages()->visible() as $item)
-                        <li>
-                            <a href="{{ $item->url() }}">{{ $item->title() }}</a>
-                        </li>
-                        @endforeach
-                        <li>
-                            <a href="/list">List Your Business</a>
-                        </li>
-                    </ul>
                 </div>
             </footer>
 
@@ -107,6 +116,6 @@
         <script src="/assets/js/app.js"></script>
 
         @yield('foot')
-        @include('layouts.analytics')
+        @include('layouts._analytics')
     </body>
 </html>

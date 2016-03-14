@@ -9,7 +9,7 @@ class App
     /**
      * Helper method for rendering a view
      *
-     * @return ViewPage
+     * @return KirbyCasts\View\ViewPage
      */
     public static function view()
     {

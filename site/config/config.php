@@ -35,3 +35,6 @@ c::set('app.mode', env('APP_MODE', 'production'));
 // Email
 c::set('email.from', env('EMAIL_FROM'));
 c::set('email.to', env('EMAIL_TO'));
+
+// Mailchimp
+c::set('newsletter.signup_url', env('MAILCHIMP_URL'));
