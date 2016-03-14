@@ -79,7 +79,7 @@
                 <div class="container">
                     @if (c::get('newsletter.signup_url'))
                     <p>
-                        <a target="_blank" href="{{ c::get('newsletter_signup_url') }}">
+                        <a target="_blank" href="{{ c::get('newsletter.signup_url') }}">
                             Join our Newsletter!
                             <i class="fa fa-external-link"></i>
                         </a>
