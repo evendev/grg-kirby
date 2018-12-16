@@ -112,7 +112,7 @@
 
         </div>
 
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key={{ c::get('gmaps_api_key') }}"></script>
         <script src="/assets/js/app.js"></script>
 
         @yield('foot')

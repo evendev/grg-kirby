@@ -38,3 +38,6 @@ c::set('email.to', env('EMAIL_TO'));
 
 // Mailchimp
 c::set('newsletter.signup_url', env('MAILCHIMP_URL'));
+
+// Google Maps
+c::get('gmaps_api_key', env('GMAPS_API_KEY'));
